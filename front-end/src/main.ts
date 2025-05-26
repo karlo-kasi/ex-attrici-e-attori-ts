@@ -121,6 +121,8 @@ async function getActresses(array: number[]) {
 
         const response = array.map((a) => getActress(a))
 
+        console.log(response)
+
         const resolve = await Promise.all(response)
 
         return resolve
